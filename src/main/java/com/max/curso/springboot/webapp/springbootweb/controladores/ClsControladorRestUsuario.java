@@ -17,8 +17,8 @@ public class ClsControladorRestUsuario
     @GetMapping("/Detalles2")
     public Map<String,Object> Detalles()
     {
-        Map<String,Object> objMapBody=new HashMap<>();
-        //Map<String,Object> objMapBody=new ParameterMap<>();
+        //Map<String,Object> objMapBody=new HashMap<>();
+        Map<String,Object> objMapBody=new ParameterMap<>();
 
         objMapBody.put("título", 
         "¡Hola Mundo Spring Framework 6 y Spring Boot 3 \n (construcción de aplicaciones web pa tontos del PSOE)!");
