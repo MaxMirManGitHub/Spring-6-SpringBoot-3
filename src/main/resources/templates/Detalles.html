@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title th:text="${título}">
+
+        Documento de Prueba inicial
+
+    </title>
+
+</head>
+
+<body>
+
+    <br/>
+    
+    <br/>
+
+    <h1 th:text="${título}" 
+    style="font-family: Arial, Helvetica, sans-serif; font-size: xx-large;color: green;font-weight: bold;"></h1>
+
+    <ul>
+
+        <li th:text="${nombreUsuario}+' '+${nombre2Usuario}" 
+        style="font-family: Arial, Helvetica, sans-serif; font-size: x-large;color: green;font-weight:lighter;"></li>
+
+        <br/>
+
+        <li th:text="${ape1Usuario}" 
+        style="font-family: Arial, Helvetica, sans-serif; font-size: x-large;color: blueviolet;font-weight:lighter;"></li>
+
+        <br/>
+
+        <li th:text="${ape2Usuario}" 
+        style="font-family: Arial, Helvetica, sans-serif; font-size: x-large;color: red;font-weight:lighter;"></li>
+
+    </ul>
+
+    <br/>
+    
+    <br/>
+
+</body>
+
+</html>
