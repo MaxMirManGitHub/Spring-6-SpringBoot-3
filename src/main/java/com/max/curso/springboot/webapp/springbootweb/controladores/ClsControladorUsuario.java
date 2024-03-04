@@ -13,18 +13,23 @@ public class ClsControladorUsuario
     @GetMapping("/Detalles1")
     public String Detalles(Model objModel,Map<String,Object> objMap)
     {
-        objModel.addAttribute("título", 
-        "¡Hola Mundo Spring Framework 6 y Spring Boot 3 \n (construcción de aplicaciones web pa tontos del PSOE)!");
+        objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Clave, 
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Valor);
 
-        objModel.addAttribute("nombreUsuario", "Máximo");
+        objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioClave, 
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioValor);
 
-        objModel.addAttribute("ape1Usuario", "Miralles");
+        objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre2UsuarioClave, 
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre2UsuarioValor);
 
-        objMap.put("título2", "Este es el segundo Título");
+        objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe1UsuarioClave, 
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe1UsuarioValor);
 
-        objMap.put("nombre2Usuario", "Carlos");
+        objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo2Clave, 
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo2Valor);
 
-        objMap.put("ape2Usuario", "Manresa");
+        objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioClave, 
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
 
         return "Detalles";
     }
