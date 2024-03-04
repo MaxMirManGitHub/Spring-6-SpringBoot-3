@@ -10,7 +10,6 @@ import org.apache.catalina.util.ParameterMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 public class ClsControladorRestUsuario 
 {
@@ -20,18 +19,11 @@ public class ClsControladorRestUsuario
         //Map<String,Object> objMapBody=new HashMap<>();
         Map<String,Object> objMapBody=new ParameterMap<>();
 
-        objMapBody.put("título", 
-        "¡Hola Mundo Spring Framework 6 y Spring Boot 3 \n (construcción de aplicaciones web pa tontos del PSOE)!");
+        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Clave,
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Valor);
 
-        objMapBody.put("nombreUsuario", "Máximo");
-
-        objMapBody.put("ape1Usuario", "Miralles");
-
-        objMapBody.put("título2", "Este es el segundo Título");
-
-        objMapBody.put("nombre2Usuario", "Carlos");
-
-        objMapBody.put("ape2Usuario", "Manresa");
+        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioClave,
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioValor);
 
         //return "Detalles";
         return objMapBody;
