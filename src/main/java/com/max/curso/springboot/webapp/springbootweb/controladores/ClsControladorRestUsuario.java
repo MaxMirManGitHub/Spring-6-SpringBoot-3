@@ -22,8 +22,20 @@ public class ClsControladorRestUsuario
         objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Clave,
         com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Valor);
 
+        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo2Clave,
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo2Valor);
+
         objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioClave,
         com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioValor);
+
+        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre2UsuarioClave,
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre2UsuarioValor);
+
+        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe1UsuarioClave,
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe1UsuarioValor);
+
+        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioClave,
+        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
 
         //return "Detalles";
         return objMapBody;
