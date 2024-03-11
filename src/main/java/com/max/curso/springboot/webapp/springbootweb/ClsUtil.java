@@ -6,8 +6,8 @@ public final class ClsUtil
 {    
     public static final String cnstStrTítulo1Clave ="título1";
     
-    public static final String cnstStrTítulo1Valor ="Construcción de Aplicaciones Web con Spring y SpringBoot pa sociatas,\r\n"+
-    " del contubernio de izquierdas, tontos y gente de letras y de mal vivir";
+    public static final String cnstStrTítulo1Valor ="Construcción de Aplicaciones Web con Spring y SpringBoot pa sociatas, "+
+    "tontos y gente del contubernio de izquierda, de letras y de mal vivir";
     
     public static final String cnstStrTítulo2Clave ="título2";
     

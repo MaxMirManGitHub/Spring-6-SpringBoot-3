@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class ClsControladorUsuario 
 {
-    @GetMapping("/Detalles1")
+    @GetMapping("/perfil1")
 
     public String Detalles(Model objModel,Map<String,Object> objMap)
     {
@@ -32,6 +32,7 @@ public class ClsControladorUsuario
         objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioClave, 
         com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
 
-        return "Detalles";
+        //Se devuelve el nombre del archivo html sin extensión situado en plantillas (templates)
+        return "perfil";
     }
 }

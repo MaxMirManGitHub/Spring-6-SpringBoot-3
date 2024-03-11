@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class ClsControladorRestUsuario 
 {
-    @GetMapping("/Detalles2")
+    @GetMapping("/perfil2")
 
     public Map<String,Object> Detalles()
     {
@@ -39,6 +39,7 @@ public class ClsControladorRestUsuario
         objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioClave,
         com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
 
+        //Se devuelve el objeto Map y se visualiza como json en el navegador, porque es un RestController
         return objMapBody;
     }
 }
