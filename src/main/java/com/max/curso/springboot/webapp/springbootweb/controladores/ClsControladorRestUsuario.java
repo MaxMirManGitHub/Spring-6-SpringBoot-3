@@ -4,17 +4,37 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.catalina.util.ParameterMap;
+import org.springframework.stereotype.Controller;
 
 //import org.springframework.ui.Model;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 
+//Controller + ResponseBody equivale a RestController
+//@Controller 
+
+@RequestMapping("/api")
+
 public class ClsControladorRestUsuario 
 {
-    @GetMapping("/perfil2")
+    @GetMapping("/perfilapirest")
+    /*
+    @RequestMapping(value = "/perfilapirest", method=RequestMethod.GET)
+    public String requestMethodName(@RequestParam String param) {
+        return new String();
+    }
+    */
+
+    //@RequestMapping(value = "/perfilapirest",method=RequestMethod.GET)
+    //@ResponseBody
 
     public Map<String,Object> Detalles()
     {
