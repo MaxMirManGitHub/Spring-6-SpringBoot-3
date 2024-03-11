@@ -37,7 +37,6 @@ public class ClsControladorRestUsuario
         objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioClave,
         com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
 
-        //return "Detalles";
         return objMapBody;
     }
 }
