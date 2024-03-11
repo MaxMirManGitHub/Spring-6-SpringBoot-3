@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+
 public class ClsControladorRestUsuario 
 {
     @GetMapping("/Detalles2")
+
     public Map<String,Object> Detalles()
     {
         //Map<String,Object> objMapBody=new HashMap<>();

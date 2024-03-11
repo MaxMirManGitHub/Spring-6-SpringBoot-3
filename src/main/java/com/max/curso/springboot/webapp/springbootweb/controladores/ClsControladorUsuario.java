@@ -7,9 +7,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
+
 public class ClsControladorUsuario 
 {
     @GetMapping("/Detalles1")
+
     public String Detalles(Model objModel,Map<String,Object> objMap)
     {
         objModel.addAttribute(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Clave, 
