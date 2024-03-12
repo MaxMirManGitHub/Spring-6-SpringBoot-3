@@ -1,6 +1,5 @@
 package com.max.curso.springboot.webapp.springbootweb.controladores;
 
-//import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.catalina.util.ParameterMap;
@@ -11,12 +10,11 @@ import org.apache.catalina.util.ParameterMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.bind.annotation.RestController;
 //import org.springframework.web.bind.annotation.RequestMethod;
 //import org.springframework.web.bind.annotation.RequestParam;
 
-
-@RestController
+import com.max.curso.springboot.webapp.springbootweb.ClsUtil;
 
 //Controller + ResponseBody equivale a RestController
 //@Controller 
@@ -42,24 +40,18 @@ public class ClsControladorRestUsuario
         //Map<String,Object> objMapBody=new HashMap<>();
         Map<String,Object> objMapBody=new ParameterMap<>();
 
-        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Clave,
-        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo1Valor);
+        objMapBody.put(ClsUtil.cnstStrTítulo1Clave, ClsUtil.cnstStrTítulo1Valor);
 
-        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo2Clave,
-        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrTítulo2Valor);
+        objMapBody.put(ClsUtil.cnstStrTítulo2Clave, ClsUtil.cnstStrTítulo2Valor);
 
-        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioClave,
-        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre1UsuarioValor);
+        objMapBody.put(ClsUtil.cnstStrNombre1UsuarioClave, ClsUtil.cnstStrNombre1UsuarioValor);
 
-        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre2UsuarioClave,
-        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrNombre2UsuarioValor);
-
-        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe1UsuarioClave,
-        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe1UsuarioValor);
-
-        objMapBody.put(com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioClave,
-        com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
-
+        objMapBody.put(ClsUtil.cnstStrNombre2UsuarioClave, ClsUtil.cnstStrNombre2UsuarioValor);    
+        
+        objMapBody.put(ClsUtil.cnstStrApe1UsuarioClave, ClsUtil.cnstStrApe1UsuarioValor);    
+        
+        objMapBody.put(ClsUtil.cnstStrApe2UsuarioClave, ClsUtil.cnstStrApe2UsuarioValor); 
+        
         //Se devuelve el objeto Map y se visualiza como json en el navegador, porque es un RestController
         return objMapBody;
     }
