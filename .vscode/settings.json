@@ -1,3 +1,4 @@
 {
-    "workbench.activityBar.location": "side"
+    "workbench.activityBar.location": "side",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
