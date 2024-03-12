@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class ClsControladorUsuario 
 {
+    //Esta llamada es casesensitive
     @GetMapping("/perfilthymeleaf")
 
     public String Detalles(Model objModel,Map<String,Object> objMap)
@@ -36,6 +37,7 @@ public class ClsControladorUsuario
         com.max.curso.springboot.webapp.springbootweb.ClsUtil.cnstStrApe2UsuarioValor);
 
         //Se devuelve el nombre del archivo html sin extensión situado en plantillas (templates)
+        //esta llamada no es casesensitive
         return "perfil";
     }
 }
