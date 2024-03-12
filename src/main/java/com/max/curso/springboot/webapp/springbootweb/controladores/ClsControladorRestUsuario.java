@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClsControladorRestUsuario 
 {
     //Esta llamada es casesensitive
-    @GetMapping("/perfilapirest")
+    @GetMapping("/perfilapirest/json1")
     /*
     @RequestMapping(value = "/perfilapirest", method=RequestMethod.GET)
     public String requestMethodName(@RequestParam String param) {
