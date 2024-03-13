@@ -11,12 +11,12 @@ import com.max.curso.springboot.webapp.springbootweb.ClsUtil;
 
 @Controller
 
-@RequestMapping("/api")
+@RequestMapping("/MaxHTML")
 
 public class ClsControladorUsuario 
 {
     //Esta llamada es casesensitive
-    @GetMapping("/perfilhtml/html1")
+    @GetMapping("/HTML1")
 
     public String Detalles(Model objModel,Map<String,Object> objMap)
     {

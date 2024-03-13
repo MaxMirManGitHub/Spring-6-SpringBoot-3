@@ -25,12 +25,12 @@ import com.max.curso.springboot.webapp.springbootweb.ClsUtil;
 //Controller + ResponseBody equivale a RestController
 //@Controller 
 
-@RequestMapping("/api")
+@RequestMapping("/MaxREST")
 
 public class ClsControladorRestUsuario 
 {
     //Esta llamada es casesensitive
-    @GetMapping("/perfilapirest/json1")
+    @GetMapping("/JSON1")
     /*
     @RequestMapping(value = "/perfilapirest", method=RequestMethod.GET)
     public String requestMethodName(@RequestParam String param) {
