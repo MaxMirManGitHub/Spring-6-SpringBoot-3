@@ -20,10 +20,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.max.curso.springboot.webapp.springbootweb.ClsUtil;
 
+@RestController
+
 //Controller + ResponseBody equivale a RestController
 //@Controller 
-
-@RestController
 
 @RequestMapping("/api")
 
